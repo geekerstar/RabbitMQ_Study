@@ -24,7 +24,7 @@ public class Producer {
 
         //4.通过channel发送数据
         for (int i = 0; i < 5; i++) {
-            String msg = "hellow rabbitmq";
+            String msg = "hello rabbitmq";
             //1.exchange 2.routingKey
             channel.basicPublish("", "test001", null, msg.getBytes());
         }
